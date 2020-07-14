@@ -14,7 +14,7 @@ if (salarioBruto <= 1556.94) {
 }
 
 let salarioBase = salarioBruto - inss;
-
+  
 if (salarioBase <= 1903.98){
     ir = 0;
 } else if (salarioBase <= 2826.65) {
