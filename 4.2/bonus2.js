@@ -7,6 +7,7 @@ for (let i = 1; i < numbers.length; i++) {
 
       numbers[i] = numbers[j];
       numbers[j] = position;
+      
     }
   }
 }
