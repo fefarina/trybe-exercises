@@ -8,6 +8,7 @@ function checkWord(word, endWord) {
       }
     }
     return controle;
+    
   }
   
   console.log(checkWord("trybe", "be")); 
