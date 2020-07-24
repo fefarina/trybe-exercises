@@ -21,15 +21,16 @@
  </body>
 
  <script>
-    let button = document.querySelector('#lib-button');
+    function insert() {
     let name = document.querySelector('#person').value;
     let adjective = document.querySelector('#adjective').value;
     let noun = document.querySelector('#noun').value;
     let history = document.querySelector('#story');
+    history.innerHTML = `${name} realmente ${adjective} ${noun}`;
+    };
 
-    button.addEventListener('click', function() {
-
-    });
+    let button = document.querySelector('#lib-button');
+    button.addEventListener('click', insert);
 
  </script>
 </html>
