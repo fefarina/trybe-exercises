@@ -33,13 +33,13 @@ elementRight.appendChild(list);
 
 const arrayNumbers = ['Um', 'Dois', 'Tres', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
 
-for(index in arrayNumbers) {
+for (index in arrayNumbers) {
     const itensList = document.createElement('li');
     itensList.innerHTML = arrayNumbers[index];
     list.appendChild(itensList);
 };
 
-for (let i = 1; i <=3; i++) {
+for (let i = 1; i <= 3; i++) {
     const elementH3 = document.createElement('h3');
     elementH3.innerHTML = `Show ${i}`
     element1.appendChild(elementH3);
@@ -49,7 +49,7 @@ const title = document.getElementsByTagName('h1')[0];
 title.className = "title";
 
 const elementsH3 = document.getElementsByTagName('h3');
-for(let i = 0; i < elementsH3.length; i++) {
+for (let i = 0; i < elementsH3.length; i++) {
     elementsH3[i].className = 'description';
 };
 
