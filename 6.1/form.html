@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Forms</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Curriculum</h1>
+    </header>
+
+    <main>
+        <form action="/" method="POST">
+            <fieldset>
+                <label for="name">Nome</label>
+                <input type="text" id="name" maxlength="40" required="required">
+                <label for="email">E-mail</label>
+                <input type="email" name="" id="email" maxlength="50" required="required">
+                <label for="cpf">CPF</label>
+                <input type="text" maxlength="11" id="cpf" required="required">
+                <label for="endereco">Endereço</label>
+                <input type="text" maxlength="200" id="endereco" required="required">
+                <label for="city">Cidade</label>
+                <input type="text" maxlength="28" id="city" required="required">
+                <label for="uf">Estado</label>
+                <select name="uf" id="uf" required="required"></select>
+                <label for="home">Tipo de Propriedade</label>
+                <label for="house">Casa</label>
+                <input type="radio" name="house" id="house" required="required">
+                <label for="apartament">Apartamento</label>
+                <input type="radio" name="house" id="apartament" required="required">
+            </fieldset>
+
+            <fieldset>
+                <label for="cv">Resumo do Currículo</label>
+                <textarea name="resume" id="" cols="30" rows="10" maxlength="1000" required="required"></textarea>
+                <label for="cargo">Cargo</label>
+                <input type="text" maxlength="40" required="required">
+                <label for="description">Descrição do Cargo</label>
+                <input type="text" maxlength="500" required="required">
+                <label for="date">Data de início</label>
+                <input type="text" required="required" placeholder="dd/mm/aaaa">
+
+            </fieldset>
+            <button type="submit" id="send">Enviar</button>
+            <button type="submit" id="clear">Limpar</button>
+        </form>
+
+
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
