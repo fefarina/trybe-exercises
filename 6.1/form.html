@@ -4,57 +4,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/bulma.min.css">
+
     <title>Forms</title>
 </head>
 
 <body>
 
-    <header>
-        <h1>Curriculum</h1>
+    <header class="section">
+        <h1 class="title has-text-centered">Curriculum</h1>
     </header>
 
-    <main>
+    <main class="has-text-centered">
         <form action="/" method="POST">
-            <fieldset>
-                <label for="name">Nome</label>
-                <input type="text" id="name" maxlength="40" required="required">
-                <label for="email">E-mail</label>
-                <input type="email" name="" id="email" maxlength="50" required="required">
-                <label for="cpf">CPF</label>
-                <input type="text" maxlength="11" id="cpf" required="required">
-                <label for="endereco">Endereço</label>
-                <input type="text" maxlength="200" id="endereco" required="required">
-                <label for="city">Cidade</label>
-                <input type="text" maxlength="28" id="city" required="required">
-                <label for="uf">Estado</label>
-                <select name="uf" id="uf" required="required"></select>
-                <label for="home">Tipo de Propriedade</label>
-                <label for="house">Casa</label>
-                <input type="radio" name="house" id="house" required="required">
-                <label for="apartament">Apartamento</label>
-                <input type="radio" name="house" id="apartament" required="required">
-            </fieldset>
+            <div class="field">
+                <label class="label" for="name">Nome:</label>
+                <div class="control">
+                    <input class="input" type="text" id="name" maxlength="40" required="required">
+                </div>
+            </div>
 
-            <fieldset>
-                <label for="cv">Resumo do Currículo</label>
-                <textarea name="resume" id="" cols="30" rows="10" maxlength="1000" required="required"></textarea>
-                <label for="cargo">Cargo</label>
-                <input type="text" maxlength="40" required="required">
-                <label for="description">Descrição do Cargo</label>
-                <input type="text" maxlength="500" required="required">
-                <label for="date">Data de início</label>
-                <input type="text" required="required" placeholder="dd/mm/aaaa">
+            <div class="field">
+                <label class="label" for="email">E-mail</label>
+                <div class="control">
+                    <input class="input" type="email" name="" id="email" maxlength="50" required="required">
+                </div>
+            </div>
 
-            </fieldset>
-            <button type="submit" id="send">Enviar</button>
-            <button type="submit" id="clear">Limpar</button>
+            <div class="field">
+                <label class="label" for="cpf">CPF</label>
+                <div class="control">
+                    <input class="input" type="text" maxlength="11" id="cpf" required="required">
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="endereco">Endereço</label>
+                <div class="control">
+                    <input class="input" type="text" maxlength="200" id="endereco" required="required">
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="city">Cidade</label>
+                <div class="control">
+                    <input class="input" type="text" maxlength="28" id="city" required="required">
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="uf">Estado</label>
+                <div class="control">
+                    <select class="select is-medium" name="uf" id="uf" required="required"></select>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="home">Tipo de Propriedade</label>
+                <div class="control">
+                    <label class="radio" for="house">
+                        <input type="radio" name="house" id="house" required="required">
+                        Casa
+                    </label>
+                    <label class="radio" for="apartament">
+                        <input type="radio" name="house" id="apartament" required="required">
+                        Apartamento
+                    </label>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="cv">Resumo do Currículo</label>
+                <div class="control">
+                    <textarea class="textarea" name="resume" id="" cols="30" rows="10" maxlength="1000"
+                        required="required"></textarea>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="cargo">Cargo</label>
+                <div class="control">
+                    <input class="input" type="text" maxlength="40" required="required">
+
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="description">Descrição do Cargo</label>
+                <div class="control">
+                    <input class="input" type="text" maxlength="500" required="required">
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="date">Data de início</label>
+                <div class="control">
+                    <input class="input" type="text" required="required" placeholder="dd/mm/aaaa">
+                </div>
+            </div>
+
+
+            <button type="submit" id="send" class="button is-success has-text-centered">Enviar</button>
+            <button type="submit" id="clear" class="button is-warning has-text-centered">Limpar</button>
+
         </form>
 
 
     </main>
 
     <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
