@@ -61,7 +61,7 @@ function clearAll() {
             inputs[i].value = '';
         }
         form.nextElementSibling.remove();
-    })
+    });
 }
 
 clearAll();
