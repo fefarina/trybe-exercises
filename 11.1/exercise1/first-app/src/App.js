@@ -8,10 +8,10 @@ const task = (value) => {
 }
 
 function App() {
-  const compromissos = ['Estudar React', 'Praticar React', 'Consolidar os conhecimentos no react'];
+  const compromissos = ['Estudar React', 'Praticar React', 'Consolidar os conhecimentos no React'];
   
   return (
-    compromissos.map(item => task(item))
+  <ul>{ compromissos.map(item => <li>{ item }</li>) }</ul>
     );
 }
 
